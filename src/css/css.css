@@ -1,0 +1,152 @@
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;border:none;}
+body{font-size:12px;font-family:simsun,arial,helvetica,clean,sans-serif;background:#fff;color:#2b2b2b;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+select,input,img{vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+table,td,tr,th{font-size:12px;}
+
+input:focus {outline: 0 none;}
+a:focus { outline: medium none;}
+a{text-decoration:none;cursor:pointer;}
+a:link{color:#004276;}
+a:visited{color:#004276;}
+a:hover{text-decoration:underline;color:#ba2636;}
+fieldset,img{border:0;}
+h1,h2,h3,h4,h5,h6{font-size:12px;font-weight:normal;}
+q:before,q:after{content:'';}
+
+.clear{clear:both;height:0;line-height:0;font-size:0;overflow:hidden;}
+.blank10{clear:both;font-size:0px;line-height:0px;height:10px; margin:0px; padding:0px;}
+.fb{font-weight:bold;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.left{float:left;}
+.right{float:right;}
+.bold
+{ font-weight:bold}
+.noborder_l
+{ border-left:0px;}
+.noborder_r
+{ border-right:0px;}
+.f_gray
+{ color:#999;}
+.f_red
+{ color:#F00;}
+.f_green
+{ color:#008040;}
+.line_24{ line-height:24px;}
+
+
+.hidden
+{ display:none;}
+
+a.c6:link,a.c6:visited
+{ color:#666666;}
+a.c6:hover
+{ color:#666666;}
+
+a.c34:link,a.c34:visited
+{ color:#343434;}
+a.c34:hover
+{ color:#343434;}
+
+a.black:link,a.black:visited
+{ color:#000;}
+a.black:hover
+{ color:#000;}
+
+/*2014.0403*/
+body{ background:url(../images/body_bg.jpg) no-repeat center top; }
+/*头部*/
+.head{ width:960px; height:81px; margin:0px auto; position:relative; overflow:hidden;}
+.head .logo{ position:absolute; width:473px; height:60px; left:16px; top:10px; background:url(../images/logo.jpg) no-repeat;}
+.head .top_menu{ position:absolute; width:220px;_width:230px; height:26px; right:0px;_right:5px; top:10px; }
+.head .top_menu li{ float:left; margin-left:20px;}
+.head .top_menu li a{ color:#496694;}
+/*导航*/
+.menu{ width:960px; height:32px; margin:0px auto; overflow:hidden;}
+.menu li{ float:left; width:158px; height:32px; line-height:32px; text-align:center; margin-right:2px; background:#95afc7;}
+.menu li a{ display:block; color:#000000; font-family:"微软雅黑"; font-size:14px;  background:#95afc7;}
+.menu li a.show{ color:#FFF; background:#0c3f7e;}
+/*banner图*/
+.banner{ width:960px; margin:0px auto; margin-top:5px;}
+.b_shouye{ height:398px;}
+/*内容部分*/
+.main{ width:960px; height:auto; margin:8px auto 0px;}
+.main .column_left{ width:289px; height:193px; background:#f1f1f1; float:left; margin-right:17px; display:inline;} 
+.main h2{ height:32px; line-height:32px; padding:0px 7px; font-family:"微软雅黑"; font-size:14px; color:#010101;}
+.main .line{ height:2px; overflow:hidden; background:#6987ac; position:relative; margin:0px 7px;}
+.main .line .duan{ position:absolute; width:70px; height:2px; overflow:hidden; background:#0c3f7e; left:0px; top:0px;}
+.main .column_left p{ padding:3px 15px; line-height:21px; text-indent:18px; color:#343434;}
+.main .column_middle{ width:343px; height:193px; background:#f1f1f1; float:left;}
+.main .column_middle ul{ padding:3px 12px 0px 12px; color:#343434;}
+.main .column_middle li{ height:21px; line-height:21px;}
+.main .column_middle span{ float:right;}
+.main .column_right{ width:293px; height:193px; background:#f1f1f1; float:left; margin-left:18px;}
+.main .column_right li{ float:left; line-height:24px; width:72px;  padding:0px 12px; display:inline;
+}
+
+.main .column_right h3{ color:#202020; font-size:12px; font-weight:bold; padding:6px 0px 5px 20px;}
+.main .column_right p{ color:#666666; line-height:24px; padding-left:20px;}
+.main .column_right p.suijin{ padding-left:60px;}
+/*底部*/
+.foot{ width:960px; height:auto; margin:18px auto 0px;}
+.foot .blue_line{ height:2px; overflow:hidden; background:#7793b7;}
+.foot p{ text-align:center; color:#6b6b6b; line-height:40px;}
+
+/*公司简介*/
+.b_jianjie{ height:160px;}
+.j_left{ width:260px; height:auto; float:left; margin-right:10px;}
+.j_left .j_title{ height:34px; background:#0c3f7e; line-height:34px; padding-left:30px; font-size:14px; font-family:"微软雅黑"; color:#FFF}
+.j_left li.dot{ width:232px; height:35px; line-height:35px; border-bottom:1px dashed #a3a3a3; background:url(../images/sprite.png) no-repeat 8px -15px;
+ padding-left:30px; }
+.j_left li a{ font-size:14px;}
+.h_65{ height:65px;}
+/*联系我们——左侧版块*/
+.tel{ width:260px; height:auto; background:#f1f1f1; padding-bottom:15px;}
+.tel li{ float:left; line-height:24px; padding:0px 5px 0px 9px; display:block; width:72px;}
+.tel li a{ font-size:12px;}
+.tel h3{color:#202020; font-size:12px; font-weight:bold; padding:2px 0px 5px 8px;}
+.tel p{ color:#666666; line-height:24px; padding-left:8px;}
+.tel p.suijin{ padding-left:45px;}
+
+.j_right{ width:677px; height:auto; float:right; background:#f9f9f9; overflow:hidden;}
+.j_right .j_weizhi{ height:30px; line-height:30px; border-bottom:2px solid #6987ac; background:url(../images/sprite.png) no-repeat 2px 7px;
+padding-left:20px;}
+.j_right .b_jianjie02{ width:660px; height:319px; margin:32px auto 32px 10px;}
+.j_right .c_j{ color:#343434; line-height:22px; margin-bottom:50px; text-indent:20px; padding:0px 10px;}
+
+.j_right .b_jianjie03{ width:612px; height:380px; margin:50px auto 42px 15px;}
+.j_right .c_adress{ line-height:22px; text-indent:20px;}
+.j_right .a_suojin{ padding-left:38px;}
+
+/*产品中心*/
+.h_30{ height:33px;}
+.product_list{ height:341px;}
+.product{ width:309px; height:341px; float:left; margin-right:32px; }
+.p_m{ margin-right:0px;}
+.product_top{ width:309px; height:309px;}
+.product_bottom{ height:50px; line-height:30px; text-align:center;}
+.product_pro{ float:left; padding-top:32px;}
+.product_pro .pay{ width:142px; height:38px; line-height:38px; text-align:center; display:block; 
+background:#c80000; font-size:18px; font-family:"微软雅黑"; color:#FFF; text-decoration:none; margin-top:15px;}
+
+/*销售服务*/
+.sale{ height:auto; margin-top:36px;}
+.sale .sale_map{ height:auto; float:left;}
+.sale .sale_text{ width:165px; height:auto; margin-top:100px; float:right;}
+.sale .sale_map01{ width:495px; height:354px;}
+.sale .sale_map02{ width:494px; height:306px;}
+.sale .sale_map03{ width:495px; height:330px;}
+.sale .padding_38{ padding-left:38px;}
+.sale .sale_map04{ width:494px; height:348px;}
+.sale .sale_map05{ width:494px; height:302px;}
+.sale .sale_map06{ width:494px; height:328px;}
+.sale .sale_map07{ width:492px; height:267px;}
+
+
+
+
+
