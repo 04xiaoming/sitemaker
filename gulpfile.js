@@ -21,8 +21,8 @@ yargs = require('yargs')
             type: 'number'
         }
     }).argv;
-//合并
-gulp.task('testConcat', function () {
+//js合并
+gulp.task('jsConcat', function () {
     gulp.src('src/js/*.js')
         .pipe(concat('all.js'))//合并后的文件名
         .pipe(gulp.dest('dist/js'))
