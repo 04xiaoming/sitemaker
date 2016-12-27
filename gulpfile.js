@@ -21,13 +21,13 @@ yargs = require('yargs')
             type: 'number'
         }
     }).argv;
-//js合并
-gulp.task('jsConcat', function () {
-    gulp.src('src/js/*.js')
-        .pipe(concat('all.js'))//合并后的文件名
-        .pipe(gulp.dest('dist/js'))
-        .pipe(browserSync.reload({stream: true}));
-});
+// //js合并
+// gulp.task('jsConcat', function () {
+//     gulp.src('src/js/*.js')
+//         .pipe(concat('all.js'))//合并后的文件名
+//         .pipe(gulp.dest('dist/js'))
+//         .pipe(browserSync.reload({stream: true}));
+// });
 //压缩js
 gulp.task('jsmin', function () {
     gulp.src('src/js/libs/*.js') //多个文件以数组形式传入
@@ -96,9 +96,9 @@ gulp.task('images', function() {
 
 });
 
-gulp.task('default', ['js', 'jsmin','Cssmin','html','images']);
+gulp.task('default', ['js','jsmin','Cssmin','html','images']);
 
-gulp.task('release', ['js', 'jsmin','Cssmin','html','images']);
+gulp.task('release', ['js','jsmin','Cssmin','html','images']);
 
 gulp.task('watch', ['release'], function () {
     gulp.watch('src/css/*', ['Cssmin']);

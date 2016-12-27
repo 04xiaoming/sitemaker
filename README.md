@@ -9,7 +9,7 @@ gulpfile.js
 如果不需要对.html代码压缩 请替换
 
 
-//对html进行压缩
+//对html进行压缩 《
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 gulp.task('html',function(){
