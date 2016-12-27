@@ -42,7 +42,7 @@ gulp.task('html',function(){
 ```
 
 
-#//图片压缩
+### //图片压缩
 ``` python
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
