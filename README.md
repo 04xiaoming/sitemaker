@@ -9,7 +9,8 @@ gulpfile.js
 如果不需要对.html代码压缩 请替换
 
 
-//对html进行压缩 《
+##//对html进行压缩 
+``` python
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
 gulp.task('html',function(){
@@ -28,12 +29,14 @@ gulp.task('html',function(){
         .pipe(rev())//压缩的时候添加版本号
         .pipe(gulp.dest('dist/'));
 });
-
-
-_//不对html进行压缩 仅加版本号并拷贝到dist目录_
+```
+-------------------
+### //不对html进行压缩 仅加版本号并拷贝到dist目录
+``` python
 var gulp = require('gulp');
 gulp.task('html',function(){
     gulp.src('src/*.html')
         .pipe(rev())//压缩的时候添加版本号
         .pipe(gulp.dest('dist/'));
 });
+```
