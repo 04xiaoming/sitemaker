@@ -37,11 +37,11 @@ gulp.task('jsmin', function () {
 });
 
 // 合并、压缩js文件
-gulp.task('js', function() {
+gulp.task('js', function () {
     return gulp.src('src/js/*.js')
         .pipe(concat('all.js'))
         .pipe(gulp.dest('dist/js'))
-        .pipe(rename({ suffix: '.min' }))
+        .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.reload({stream: true}));
@@ -51,24 +51,22 @@ gulp.task('js', function() {
 //对html进行压缩
 var gulp = require('gulp');
 var htmlmin = require('gulp-htmlmin');
-gulp.task('html',function(){
+gulp.task('html', function () {
     var options = {
-        collapseWhitespace:true,
-        collapseBooleanAttributes:true,
-        removeComments:true,
-        removeEmptyAttributes:true,
-        removeScriptTypeAttributes:true,
-        removeStyleLinkTypeAttributes:true,
-        minifyJS:true,
-        minifyCSS:true
+        collapseWhitespace: true,
+        collapseBooleanAttributes: true,
+        removeComments: true,
+        removeEmptyAttributes: true,
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        minifyJS: true,
+        minifyCSS: true
     };
     gulp.src('src/*.html')
         .pipe(htmlmin(options))
         .pipe(rev())//压缩的时候添加版本号
         .pipe(gulp.dest('dist/'));
 });
-
-
 
 
 gulp.task('Cssmin', function () {
@@ -79,11 +77,10 @@ gulp.task('Cssmin', function () {
 });
 
 
-
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');//png图片压缩
-gulp.task('images', function() {
+gulp.task('images', function () {
     return gulp.src('src/images/**/*.?(png|jpg|gif|JPG|GIF|PNG)')
         .pipe(changed('dist/images/')) // 忽略不变的文件
         .pipe(imagemin({
@@ -96,16 +93,15 @@ gulp.task('images', function() {
 
 });
 
-gulp.task('default', ['js','jsmin','Cssmin','html','images']);
+gulp.task('default', ['js', 'jsmin', 'Cssmin', 'html', 'images']);
 
-gulp.task('release', ['js','jsmin','Cssmin','html','images']);
+gulp.task('release', ['js', 'jsmin', 'Cssmin', 'html', 'images']);
 
 gulp.task('watch', ['release'], function () {
     gulp.watch('src/css/*', ['Cssmin']);
     gulp.watch('src/images/**/*.?(png|jpg|gif|JPG|GIF|PNG)', ['images']);
     gulp.watch('src/**/*.html', ['html']);
 });
-
 
 
 gulp.task('server', function () {
