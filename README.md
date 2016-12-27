@@ -1,10 +1,13 @@
 # sitemaker
 
 前端gulp构建的开源demo 主要对js合并和压缩、image图片压缩、html代码压缩
+
 js如果不需要压缩的文件,可以放入js/libs
 
 注意:使用本demo 确认已安装node
+``` python
 node-v 查看版本
+```
 
 发布工具自动添加版本号,引用css、js请添加?rev=@@hash
 
