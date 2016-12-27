@@ -75,16 +75,18 @@ body{ background:url(../images/body_bg.jpg) no-repeat center top; }
 .b_shouye{ height:398px;}
 /*内容部分*/
 .main{ width:960px; height:auto; margin:8px auto 0px;}
-.main .column_left{ width:289px; height:193px; background:#f1f1f1; float:left; margin-right:17px; display:inline;} 
+.main .column_left{ width:289px; height:193px; background:#f9f9f9; float:left; margin-right:17px; display:inline;}
 .main h2{ height:32px; line-height:32px; padding:0px 7px; font-family:"微软雅黑"; font-size:14px; color:#010101;}
 .main .line{ height:2px; overflow:hidden; background:#6987ac; position:relative; margin:0px 7px;}
 .main .line .duan{ position:absolute; width:70px; height:2px; overflow:hidden; background:#0c3f7e; left:0px; top:0px;}
-.main .column_left p{ padding:3px 15px; line-height:21px; text-indent:18px; color:#343434;}
-.main .column_middle{ width:343px; height:193px; background:#f1f1f1; float:left;}
+.main .column_left p{ padding:3px 15px; line-height:25px; text-indent:25px; color:#343434;
+ font-size:14px;}
+.main .column_middle{ width:343px; height:193px; background:#f9f9f9; float:left;}
 .main .column_middle ul{ padding:3px 12px 0px 12px; color:#343434;}
-.main .column_middle li{ height:21px; line-height:21px;}
+.main .column_middle li{ height:25px; line-height:25px;
+ font-size:14px;}
 .main .column_middle span{ float:right;}
-.main .column_right{ width:293px; height:193px; background:#f1f1f1; float:left; margin-left:18px;}
+.main .column_right{ width:293px; height:193px; background:#f9f9f9; float:left; margin-left:18px;}
 .main .column_right li{ float:left; line-height:24px; width:72px;  padding:0px 12px; display:inline;
 }
 
@@ -94,7 +96,7 @@ body{ background:url(../images/body_bg.jpg) no-repeat center top; }
 /*底部*/
 .foot{ width:960px; height:auto; margin:18px auto 0px;}
 .foot .blue_line{ height:2px; overflow:hidden; background:#7793b7;}
-.foot p{ text-align:center; color:#6b6b6b; line-height:40px;}
+.foot p{ text-align:center; color:#a3a3a3; line-height:40px;}
 
 /*公司简介*/
 .b_jianjie{ height:160px;}

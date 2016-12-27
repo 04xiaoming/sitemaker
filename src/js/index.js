@@ -25,7 +25,7 @@ $(function () {
 
         //版权
 
-        copy.html(res.copyright);
+        copy.html(res.index.copyright);
 
     });
 
