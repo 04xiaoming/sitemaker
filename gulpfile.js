@@ -76,7 +76,7 @@ gulp.task('Cssmin', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-
+//图片压缩
 var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');//png图片压缩
