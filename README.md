@@ -1,6 +1,18 @@
 # sitemaker
 
-您好
+前端gulp构建的开源demo 主要对js合并和压缩、image图片压缩、html代码压缩
+js如果不需要压缩的文件,可以放入js/libs
+
+注意:使用本demo 确认已安装node
+node-v 查看版本
+
+发布工具自动添加版本号,引用css、js请添加?rev=@@hash
+
+``` python
+<link rel="stylesheet" type="text/css" href="css/css.css?rev=@@hash"/>
+<script src="js/libs/jquery.js?rev=@@hash"></script>
+<script src="js/all.min.js?rev=@@hash"></script>
+```
 
 gulp 自动化发布工具
 
@@ -60,4 +72,3 @@ gulp.task('images', function () {
 
 });
 ```
-1
