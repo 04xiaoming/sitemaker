@@ -30,7 +30,7 @@ gulp.task('html',function(){
 });
 
 
-//不对html进行压缩 仅加版本号并拷贝到dist目录
+_//不对html进行压缩 仅加版本号并拷贝到dist目录_
 var gulp = require('gulp');
 gulp.task('html',function(){
     gulp.src('src/*.html')
