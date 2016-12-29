@@ -61,8 +61,8 @@ a.black:hover
 body{ background:url(../images/body_bg.jpg) no-repeat center top; }
 /*头部*/
 .head{ width:960px; height:81px; margin:0px auto; position:relative; overflow:hidden;}
-.head .logo{ position:absolute; width:473px; height:60px; left:16px; top:10px; background:url(../images/logo.jpg) no-repeat;}
-.head .top_menu{ position:absolute; width:220px;_width:230px; height:26px; right:0px;_right:5px; top:10px; }
+.head .logo{ position:absolute; width:473px; height:60px; left:0px; top:10px; background:url(../images/logo.png) no-repeat;}
+.head .top_menu{ position:absolute; width:210px;_width:230px; height:26px; right:0px;_right:5px; top:10px; }
 .head .top_menu li{ float:left; margin-left:20px;}
 .head .top_menu li a{ color:#496694;}
 /*导航*/
@@ -73,6 +73,29 @@ body{ background:url(../images/body_bg.jpg) no-repeat center top; }
 /*banner图*/
 .banner{ width:960px; margin:0px auto; margin-top:5px;}
 .b_shouye{ height:398px;}
+
+.foucs_box{height:400px; position:relative; overflow:hidden;}
+/*焦点图片*/
+.foucs{width:100% !important;}
+.foucs li{width:100%; height:400px; position:absolute; left:0; top:0; z-index:1;}
+.foucs li a{ width:100%; height:400px; display:block;}
+/*左右按钮*/
+.foucs_menu{width:1200px; height:400px; position:absolute; top:0; left:50%; margin-left:-600px; z-index:2;}
+.btn{ display:none;}
+.btn a{display:block; width:49px; height:104px; position:absolute; top:50%; margin-top:-52px; filter:alpha(opacity=40);-moz-opacity:0.4;-khtml-opacity:0.4;opacity:0.4;}
+.btn a:hover{ filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity:0.9;opacity:0.9;}
+.btn a.prev{left:20px; background:url(../images/banner/foot.png) no-repeat 0 0;}
+.btn a.next{right:20px; background:url(../images/banner/foot.png) no-repeat -49px 0;}
+.foucs_box:hover .btn{ display:block;}
+/*小圆圈*/
+.s_num {position:absolute; left:50%; bottom:10px; margin-left:-50px;}
+.s_num li {float:left; width:20px; height:6px;
+ background: rgba(0,0,0,0.5);  cursor:pointer;margin-right:5px; display:block;}
+.s_num li.on {background: #00DD00;overflow: hidden;}
+
+
+
+
 /*内容部分*/
 .main{ width:960px; height:auto; margin:8px auto 0px;}
 .main .column_left{ width:289px; height:193px; background:#f9f9f9; float:left; margin-right:17px; display:inline;}
